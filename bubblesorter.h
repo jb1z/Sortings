@@ -1,6 +1,5 @@
 #ifndef BUBBLESORTER_H
 #define BUBBLESORTER_H
-#include <QDebug>
 #include "sorter.h"
 
 class bubbleSorter: sorter
