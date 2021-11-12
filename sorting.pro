@@ -11,11 +11,13 @@ CONFIG += c++11
 SOURCES += \
     bubblesorter.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    sorter.cpp
 
 HEADERS += \
     bubblesorter.h \
-    mainwindow.h
+    mainwindow.h \
+    sorter.h
 
 FORMS += \
     mainwindow.ui
