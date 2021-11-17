@@ -6,7 +6,7 @@ class selectsorter:sorter
 {
 public:
     selectsorter();
-    void sort(int* arrToSort, int N);
+    void sort(int arrToSort[], int N);
 };
 
 #endif // SELECTSORTER_H

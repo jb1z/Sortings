@@ -6,7 +6,7 @@ class sorter
 {
 public:
     sorter();
-    virtual void sort(int *arrToSort, int N) = 0;
+    virtual void sort(int arrToSort[], int N) = 0;
     void swap(int &par1, int &par2);
     void print(int *arrToSort, int N);
 };

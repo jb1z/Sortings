@@ -5,7 +5,7 @@ bubbleSorter::bubbleSorter()
 
 }
 
-void bubbleSorter::sort(int* arrToSort, int N)
+void bubbleSorter::sort(int arrToSort[], int N)
 {
     for(int i =0; i < N - 1;i++)
     {

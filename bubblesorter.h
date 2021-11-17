@@ -6,7 +6,7 @@ class bubbleSorter: sorter
 {
     public:
         bubbleSorter();
-        void sort(int* arrToSort, int N);
+        void sort(int arrToSort[], int N);
 };
 
 #endif // BUBBLESORTER_H

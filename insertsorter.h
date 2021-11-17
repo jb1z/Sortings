@@ -6,7 +6,7 @@ class insertsorter:sorter
 {
 public:
     insertsorter();
-    void sort(int* arrToSort, int N);
+    void sort(int arrToSort[], int N);
 };
 
 #endif // INSERTSORTER_H
