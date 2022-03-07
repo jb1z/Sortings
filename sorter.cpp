@@ -1,16 +1,16 @@
 #include "sorter.h"
 
-sorter::sorter()
+Sorter::Sorter()
 {
 
 }
 
-void sorter::print(int *arrToSort, int N)
+void Sorter::print(int *arrToSort, int N)
 {
    for(int i = 0; i < N;i++) qDebug() << arrToSort[i];
 }
 
-bool isSorted(int *arrToSort, int N)
+bool Sorter::isSorted(int *arrToSort, int N)
 {
     int checker = arrToSort[0];
     for(int i = 1; i < N; i++)
@@ -21,7 +21,7 @@ bool isSorted(int *arrToSort, int N)
     return true;
 }
 
-void sorter::swap(int &par1, int &par2)
+void Sorter::swap(int &par1, int &par2)
 {
     int tmp = par1;
     par1 = par2;

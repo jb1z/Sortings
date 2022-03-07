@@ -1,10 +1,10 @@
 #include "insertsorter.h"
 
-insertsorter::insertsorter()
+Insertsorter::Insertsorter()
 {
 
 }
-void insertsorter::sort(int arrToSort[], int N)
+void Insertsorter::sort(int arrToSort[], int N)
 {
     for(int i = 1; i < N; i++)
     {
@@ -17,4 +17,6 @@ void insertsorter::sort(int arrToSort[], int N)
         arrToSort[j] = temp;
     }
     this->print(arrToSort, N);
+    if(this->isSorted(arrToSort, N)) qDebug() << "Sorted";
+    else qDebug() << "Not sorted";
 }

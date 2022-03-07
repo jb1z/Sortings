@@ -10,9 +10,9 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     //w.show();
-    bubbleSorter *bubble = new bubbleSorter();
-    selectsorter *select = new selectsorter();
-    insertsorter *insert = new insertsorter();
+    BubbleSorter *bubble = new BubbleSorter();
+    Selectsorter *select = new Selectsorter();
+    Insertsorter *insert = new Insertsorter();
     int arr[] = {10, 9 ,8, 7, 6, 5, 4, 3, 2, 1};
     int N = 10;
     bubble->sort(arr, N);
@@ -20,5 +20,6 @@ int main(int argc, char *argv[])
     select->sort(arr, N);
     qDebug() << "\n";
     insert->sort(arr, N);
+    qDebug() << "\n";
     return a.exec();
 }

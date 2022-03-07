@@ -2,10 +2,10 @@
 #define SELECTSORTER_H
 #include "sorter.h"
 
-class selectsorter:sorter
+class Selectsorter:private Sorter
 {
 public:
-    selectsorter();
+    Selectsorter();
     void sort(int arrToSort[], int N);
 };
 

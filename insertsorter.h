@@ -2,10 +2,10 @@
 #define INSERTSORTER_H
 #include "sorter.h"
 
-class insertsorter:sorter
+class Insertsorter: private Sorter
 {
 public:
-    insertsorter();
+    Insertsorter();
     void sort(int arrToSort[], int N);
 };
 

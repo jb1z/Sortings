@@ -1,10 +1,10 @@
 #include "selectsorter.h"
 
-selectsorter::selectsorter()
+Selectsorter::Selectsorter()
 {
 
 }
-void selectsorter::sort(int arrToSort[], int N)
+void Selectsorter::sort(int arrToSort[], int N)
 {
     for(int i = 0; i < N - 1;i++)
     {
@@ -16,4 +16,6 @@ void selectsorter::sort(int arrToSort[], int N)
         this->swap(arrToSort[i], arrToSort[min_index]);
     }
     this->print(arrToSort, N);
+    if(this->isSorted(arrToSort, N)) qDebug() << "Sorted";
+    else qDebug() << "Not sorted";
 }

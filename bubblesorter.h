@@ -2,10 +2,10 @@
 #define BUBBLESORTER_H
 #include "sorter.h"
 
-class bubbleSorter: sorter
+class BubbleSorter: private Sorter
 {
     public:
-        bubbleSorter();
+        BubbleSorter();
         void sort(int arrToSort[], int N);
 };
 

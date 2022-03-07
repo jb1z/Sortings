@@ -1,11 +1,11 @@
 #include "bubblesorter.h"
 
-bubbleSorter::bubbleSorter()
+BubbleSorter::BubbleSorter()
 {
 
 }
 
-void bubbleSorter::sort(int arrToSort[], int N)
+void BubbleSorter::sort(int arrToSort[], int N)
 {
     for(int i =0; i < N - 1;i++)
     {
@@ -15,4 +15,6 @@ void bubbleSorter::sort(int arrToSort[], int N)
         }
     }
     this->print(arrToSort, N);
+    if(this->isSorted(arrToSort, N)) qDebug() << "Sorted";
+    else qDebug() << "Not sorted";
 }
