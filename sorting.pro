@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     bubblesorter.cpp \
+    countsorter.cpp \
     heapsorter.cpp \
     insertsorter.cpp \
     main.cpp \
@@ -21,6 +22,7 @@ SOURCES += \
 
 HEADERS += \
     bubblesorter.h \
+    countsorter.h \
     heapsorter.h \
     insertsorter.h \
     mainwindow.h \
