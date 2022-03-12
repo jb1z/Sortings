@@ -18,6 +18,9 @@ void BubbleSorter::sort(int arrToSort[], QVector <QPushButton*> arrButtons, int 
                 QPoint secondPoint = arrButtons[j + 1]->pos();
                 arrButtons[j]->move(secondPoint.rx(), secondPoint.ry());
                 arrButtons[j + 1]->move(firstPoint.rx(), firstPoint.ry());
+                QPushButton* temp = arrButtons[j];
+                arrButtons[j] = arrButtons[j + 1];
+                arrButtons[j + 1] = temp;
             }
         }
     }
