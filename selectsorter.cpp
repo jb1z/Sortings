@@ -16,7 +16,4 @@ void Selectsorter::sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N
         this->swap(arrToSort[i], arrToSort[min_index]);
         this->swapButtons(arrButtons, i, min_index);
     }
-    this->print(arrToSort, N);
-    if(this->isSorted(arrToSort, N)) qDebug() << "Sorted";
-    else qDebug() << "Not sorted";
 }
