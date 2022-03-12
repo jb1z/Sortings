@@ -5,7 +5,7 @@ BubbleSorter::BubbleSorter()
 
 }
 
-void BubbleSorter::sort(int arrToSort[], QVector <QPushButton*> arrButtons, int N)
+void BubbleSorter::sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N)
 {
     for(int i =0; i < N - 1;i++)
     {
@@ -14,13 +14,7 @@ void BubbleSorter::sort(int arrToSort[], QVector <QPushButton*> arrButtons, int 
             if(arrToSort[j] > arrToSort[j + 1])
             {
                 this->swap(arrToSort[j], arrToSort[j + 1]);
-                QPoint firstPoint = arrButtons[j]->pos();
-                QPoint secondPoint = arrButtons[j + 1]->pos();
-                arrButtons[j]->move(secondPoint.rx(), secondPoint.ry());
-                arrButtons[j + 1]->move(firstPoint.rx(), firstPoint.ry());
-                QPushButton* temp = arrButtons[j];
-                arrButtons[j] = arrButtons[j + 1];
-                arrButtons[j + 1] = temp;
+                this->swapButtons(arrButtons, j, j + 1);
             }
         }
     }

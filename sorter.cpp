@@ -10,6 +10,17 @@ void Sorter::print(int *arrToSort, int N)
    for(int i = 0; i < N;i++) qDebug() << arrToSort[i];
 }
 
+void Sorter::swapButtons(QVector <QPushButton*>& arrButtons, int firstButtonIndex, int secondButtonIndex)
+{
+    QPoint firstPoint = arrButtons[firstButtonIndex]->pos();
+    QPoint secondPoint = arrButtons[secondButtonIndex]->pos();
+    arrButtons[firstButtonIndex]->move(secondPoint.rx(), secondPoint.ry());
+    arrButtons[secondButtonIndex]->move(firstPoint.rx(), firstPoint.ry());
+    QPushButton* temp = arrButtons[firstButtonIndex];
+    arrButtons[firstButtonIndex] = arrButtons[secondButtonIndex];
+    arrButtons[secondButtonIndex] = temp;
+}
+
 bool Sorter::isSorted(int *arrToSort, int N)
 {
     int checker = arrToSort[0];
