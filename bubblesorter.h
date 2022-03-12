@@ -8,7 +8,7 @@ class BubbleSorter: private Sorter
 {
     public:
         BubbleSorter();
-        void sort(int arrToSort[], QVector <QPushButton*> arrButtons, int N);
+        void sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N);
 };
 
 #endif // BUBBLESORTER_H

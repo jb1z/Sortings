@@ -21,6 +21,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     QVector <QPushButton*> arrButtons;
     BubbleSorter* bubble = new BubbleSorter();
+    Insertsorter* insert = new Insertsorter();
+    Selectsorter* select = new Selectsorter();
     int* arr = new int[10];
     int N = 10;
     ~MainWindow();

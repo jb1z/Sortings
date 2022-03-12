@@ -6,7 +6,7 @@ class Selectsorter:private Sorter
 {
 public:
     Selectsorter();
-    void sort(int arrToSort[], int N);
+    void sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N);
 };
 
 #endif // SELECTSORTER_H

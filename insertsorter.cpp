@@ -4,7 +4,7 @@ Insertsorter::Insertsorter()
 {
 
 }
-void Insertsorter::sort(int arrToSort[], int N)
+void Insertsorter::sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N)
 {
     for(int i = 1; i < N; i++)
     {

@@ -35,7 +35,7 @@
      <string>Launch simulating</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="labelSortingType">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -67,7 +67,7 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="labelText">
        <property name="maximumSize">
         <size>
          <width>250</width>

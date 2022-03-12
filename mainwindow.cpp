@@ -35,18 +35,20 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_bubbleSorterButton_clicked()
 {
-   ui->label_2->setText("You chose: bubble sorting.");
+   ui->labelSortingType->setText("You chose: bubble sorting.");
    bubble->sort(arr, arrButtons, N);
 }
 
 void MainWindow::on_insertSorterButton_clicked()
 {
-    ui->label_2->setText("You chose: insert sorting.");
+    ui->labelSortingType->setText("You chose: insert sorting.");
+    insert->sort(arr, arrButtons, N);
 }
 
 
 void MainWindow::on_selectSorterButton_clicked()
 {
-    ui->label_2->setText("You chose: select sorting.");
+    ui->labelSortingType->setText("You chose: select sorting.");
+    select->sort(arr, arrButtons, N);
 }
 
