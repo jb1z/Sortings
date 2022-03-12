@@ -14,6 +14,7 @@ SOURCES += \
     insertsorter.cpp \
     main.cpp \
     mainwindow.cpp \
+    mergesorter.cpp \
     quicksorter.cpp \
     selectsorter.cpp \
     sorter.cpp
@@ -23,6 +24,7 @@ HEADERS += \
     heapsorter.h \
     insertsorter.h \
     mainwindow.h \
+    mergesorter.h \
     quicksorter.h \
     selectsorter.h \
     sorter.h
