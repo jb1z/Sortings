@@ -2,7 +2,7 @@
 #define QUICKSORTER_H
 #include "sorter.h"
 
-class quicksorter:private Sorter
+class quicksorter: public Sorter
 {
 public:
     quicksorter();

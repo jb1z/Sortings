@@ -2,7 +2,7 @@
 #define INSERTSORTER_H
 #include "sorter.h"
 
-class Insertsorter: private Sorter
+class Insertsorter: public Sorter
 {
 public:
     Insertsorter();

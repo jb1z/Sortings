@@ -2,7 +2,7 @@
 #define COUNTSORTER_H
 #include "sorter.h"
 
-class countsorter: private Sorter
+class countsorter: public Sorter
 {
 public:
     countsorter();

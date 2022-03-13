@@ -2,7 +2,7 @@
 #define MERGESORTER_H
 #include "sorter.h"
 
-class mergesorter:private Sorter
+class mergesorter: public Sorter
 {
 public:
     mergesorter();
