@@ -20,8 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     QRandomGenerator *rg = QRandomGenerator::global();
     for(int i = 0; i < 10; i++)
     {
-        arr[i] = rg->bounded(1,10);
-        qDebug() << arr[i];
+        arr[i] = rg->bounded(1,10);        
         arrButtons[i]->setText(QString::number(arr[i]));
     }
 }
@@ -66,6 +65,18 @@ void MainWindow::on_simulateButton_clicked()
         case 3:
             select->sort(arr, arrButtons, N);
         break;
+    }
+}
+
+
+void MainWindow::on_remakeButton_clicked()
+{
+    QRandomGenerator *rg = QRandomGenerator::global();
+    for(int i = 0; i < 10; i++)
+    {
+        arr[i] = rg->bounded(1,10);
+        arrButtons[i]->move(290 + 50 * i, 50);
+        arrButtons[i]->setText(QString::number(arr[i]));
     }
 }
 
