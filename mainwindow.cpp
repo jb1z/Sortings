@@ -20,8 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     QRandomGenerator *rg = QRandomGenerator::global();
     for(int i = 0; i < 10; i++)
     {
-        arr[i] = rg->bounded(1,10);
-        qDebug() << arr[i];
+        arr[i] = rg->bounded(1,10);        
         arrButtons[i]->setText(QString::number(arr[i]));
     }
 }
@@ -36,19 +35,48 @@ MainWindow::~MainWindow()
 void MainWindow::on_bubbleSorterButton_clicked()
 {
    ui->labelSortingType->setText("You chose: bubble sorting.");
-   bubble->sort(arr, arrButtons, N);
+   Sorter::setSortingType(1);
 }
 
 void MainWindow::on_insertSorterButton_clicked()
 {
     ui->labelSortingType->setText("You chose: insert sorting.");
-    insert->sort(arr, arrButtons, N);
+    Sorter::setSortingType(2);
 }
 
 
 void MainWindow::on_selectSorterButton_clicked()
 {
     ui->labelSortingType->setText("You chose: select sorting.");
-    select->sort(arr, arrButtons, N);
+    Sorter::setSortingType(3);
+}
+
+
+void MainWindow::on_simulateButton_clicked()
+{
+    switch(Sorter::getSortingType())
+    {
+        case 1:
+            bubble->sort(arr, arrButtons, N);
+        break;
+        case 2:
+            insert->sort(arr, arrButtons, N);
+        break;
+        case 3:
+            select->sort(arr, arrButtons, N);
+        break;
+    }
+}
+
+
+void MainWindow::on_remakeButton_clicked()
+{
+    QRandomGenerator *rg = QRandomGenerator::global();
+    for(int i = 0; i < 10; i++)
+    {
+        arr[i] = rg->bounded(1,10);
+        arrButtons[i]->move(290 + 50 * i, 50);
+        arrButtons[i]->setText(QString::number(arr[i]));
+    }
 }
 

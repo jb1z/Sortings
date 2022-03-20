@@ -1,13 +1,25 @@
 #include "sorter.h"
 
+int Sorter::sortingType;
+
 Sorter::Sorter()
 {
+    sortingType = 0;
+}
 
+int Sorter::getSortingType()
+{
+    return sortingType;
+}
+
+void Sorter::setSortingType(int sortingTypeToSet)
+{
+    sortingType = sortingTypeToSet;
 }
 
 void Sorter::print(int *arrToSort, int N)
 {
-   for(int i = 0; i < N;i++) qDebug() << arrToSort[i];
+   for (int i = 0; i < N;i++) qDebug() << arrToSort[i];
 }
 
 void Sorter::swapButtons(QVector <QPushButton*>& arrButtons, int firstButtonIndex, int secondButtonIndex)

@@ -34,6 +34,10 @@ private slots:
 
     void on_selectSorterButton_clicked();
 
+    void on_simulateButton_clicked();
+
+    void on_remakeButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

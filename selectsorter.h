@@ -2,7 +2,7 @@
 #define SELECTSORTER_H
 #include "sorter.h"
 
-class Selectsorter:private Sorter
+class Selectsorter: public Sorter
 {
 public:
     Selectsorter();

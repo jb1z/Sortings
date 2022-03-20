@@ -2,7 +2,7 @@
 #define HEAPSORTER_H
 #include "sorter.h"
 
-class heapsorter:private Sorter
+class heapsorter: public Sorter
 {
 public:
     heapsorter();

@@ -4,7 +4,7 @@
 #include <QPushButton>
 #include <QPoint>
 
-class BubbleSorter: private Sorter
+class BubbleSorter: public Sorter
 {
     public:
         BubbleSorter();
