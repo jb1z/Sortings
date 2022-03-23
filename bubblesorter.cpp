@@ -17,5 +17,5 @@ void BubbleSorter::sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N
                 this->swapButtons(arrButtons, j, j + 1);
             }
         }
-    }
+    }  
 }

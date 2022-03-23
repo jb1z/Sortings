@@ -2,6 +2,7 @@
 #define SORTER_H
 #include <QDebug>
 #include <QPushButton>
+#include <windows.h>
 
 class Sorter
 {

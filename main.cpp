@@ -1,7 +1,4 @@
 #include "mainwindow.h"
-#include "bubblesorter.h"
-#include "insertsorter.h"
-#include "selectsorter.h"
 #include <QDebug>
 #include <QApplication>
 

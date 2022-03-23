@@ -28,7 +28,8 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete bubble;
+    delete select;
+    delete insert;
 }
 
 
@@ -57,8 +58,11 @@ void MainWindow::on_simulateButton_clicked()
     switch(Sorter::getSortingType())
     {
         case 1:
-            bubble->sort(arr, arrButtons, N);
-        break;
+        {
+            animationThread* Thread = new animationThread();
+            Thread->runSorting(arr, arrButtons, N);
+            break;
+        }
         case 2:
             insert->sort(arr, arrButtons, N);
         break;
@@ -79,4 +83,5 @@ void MainWindow::on_remakeButton_clicked()
         arrButtons[i]->setText(QString::number(arr[i]));
     }
 }
+
 
