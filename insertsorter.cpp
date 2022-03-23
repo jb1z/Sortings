@@ -16,7 +16,4 @@ void Insertsorter::sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N
         }
         arrToSort[j] = temp;
     }
-    this->print(arrToSort, N);
-    if(this->isSorted(arrToSort, N)) qDebug() << "Sorted";
-    else qDebug() << "Not sorted";
 }

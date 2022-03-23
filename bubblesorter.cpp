@@ -11,6 +11,12 @@ void BubbleSorter::sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N
     {
         for(int j = 0; j < N - 1;j++)
         {
+            //For visualising comparisons
+            arrButtons[j]->setDisabled(true);
+            arrButtons[j + 1]->setDisabled(true);
+            Sleep(1000);
+            arrButtons[j]->setDisabled(false);
+            arrButtons[j + 1]->setDisabled(false);
             if(arrToSort[j] > arrToSort[j + 1])
             {
                 this->swap(arrToSort[j], arrToSort[j + 1]);
