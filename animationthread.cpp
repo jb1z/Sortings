@@ -5,7 +5,7 @@ animationThread::animationThread()
 
 }
 
-void animationThread::runSorting(int *arrToSort, QVector<QPushButton *> arrButtons, int N)
+void animationThread::runSorting(int *arrToSort, QVector<QPushButton *> arrButtons, int N, int sortingType)
 {
     this->N = N;
     for(int i = 0; i < N;i++){
@@ -18,4 +18,5 @@ void animationThread::runSorting(int *arrToSort, QVector<QPushButton *> arrButto
 void animationThread::run()
 {
     bubble->sort(arr, arrButtons, N);
+    delete bubble;
 }

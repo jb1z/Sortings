@@ -28,8 +28,6 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete select;
-    delete insert;
 }
 
 
@@ -55,22 +53,9 @@ void MainWindow::on_selectSorterButton_clicked()
 
 void MainWindow::on_simulateButton_clicked()
 {
-    switch(Sorter::getSortingType())
-    {
-        case 1:
-        {
-            animationThread* thread = new animationThread();
-            thread->runSorting(arr, arrButtons, N);
-            thread->quit();
-            break;
-        }
-        case 2:
-            insert->sort(arr, arrButtons, N);
-        break;
-        case 3:
-            select->sort(arr, arrButtons, N);
-        break;
-    }
+    animationThread* thread = new animationThread();
+    thread->runSorting(arr, arrButtons, N, Sorter::getSortingType());
+    thread->quit();
 }
 
 
