@@ -33,17 +33,17 @@ void Sorter::swapButtons(QVector <QPushButton*>& arrButtons, int firstButtonInde
         if(i < 5){
             firstPoint.ry() +=10;
             secondPoint.ry() +=10;
-            Sleep(100);
+            Sleep(10);
         }
         else if (i >= 5 && i < 10){
             firstPoint.rx() +=rastX;
             secondPoint.rx() -=rastX;
-            Sleep(1000);
+            Sleep(100);
         }
         else if (i >= 10){
             firstPoint.ry() -=10;
             secondPoint.ry() -=10;
-            Sleep(100);
+            Sleep(10);
         }
         arrButtons[firstButtonIndex]->move(firstPoint.rx(), firstPoint.ry());
         arrButtons[secondButtonIndex]->move(secondPoint.rx(), secondPoint.ry());

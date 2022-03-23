@@ -59,8 +59,9 @@ void MainWindow::on_simulateButton_clicked()
     {
         case 1:
         {
-            animationThread* Thread = new animationThread();
-            Thread->runSorting(arr, arrButtons, N);
+            animationThread* thread = new animationThread();
+            thread->runSorting(arr, arrButtons, N);
+            thread->quit();
             break;
         }
         case 2:
