@@ -12,13 +12,17 @@ void Insertsorter::sort(int* arrToSort, QVector <QPushButton*>& arrButtons, int 
         int j = i;
         arrButtons[j]->setDisabled(true);
         upAndDownButton(arrButtons[j], 10);
-        for(; j> 0 && temp < arrToSort[j-1];j--)
+        for(; j> 0;j--)
         {
             arrButtons[j - 1]->setDisabled(true);
-            arrToSort[j] = arrToSort[j - 1];
-            Sleep(100);
+            Sleep(250);
             arrButtons[j - 1]->setDisabled(false);
-            shiftButton(arrButtons, j, j - 1);
+            if(temp < arrToSort[j - 1])
+            {
+                arrToSort[j] = arrToSort[j - 1];
+                shiftButton(arrButtons, j, j - 1);
+            }
+            else break;
         }
         arrToSort[j] = temp;      
         upAndDownButton(arrButtons[j], -10);

@@ -13,7 +13,7 @@ void Selectsorter::sort(int* arrToSort, QVector <QPushButton*>& arrButtons, int 
         for(int j = i + 1;j < N;j++)
         {
             arrButtons[j]->setDisabled(true);
-            Sleep(100);
+            Sleep(500);
             arrButtons[j]->setDisabled(false);
             if(arrToSort[j] < arrToSort[min_index])
             {
