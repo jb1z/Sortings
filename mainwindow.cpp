@@ -20,8 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
     QRandomGenerator *rg = QRandomGenerator::global();
     for(int i = 0; i < 10; i++)
     {
-        arr[i] = rg->bounded(1,10);        
-        arrButtons[i]->setText(QString::number(arr[i]));
+        arrToSort[i] = rg->bounded(1,10);
+        arrButtons[i]->setText(QString::number(arrToSort[i]));
     }
 }
 
@@ -54,20 +54,18 @@ void MainWindow::on_selectSorterButton_clicked()
 void MainWindow::on_simulateButton_clicked()
 {
     animationThread* thread = new animationThread();
-    thread->runSorting(arr, arrButtons, N, Sorter::getSortingType());
-    thread->quit();
+    thread->runSorting(arrToSort, &arrButtons, N, Sorter::getSortingType());
+    thread->quit();    
 }
 
 
 void MainWindow::on_remakeButton_clicked()
-{
+{    
     QRandomGenerator *rg = QRandomGenerator::global();
     for(int i = 0; i < 10; i++)
     {
-        arr[i] = rg->bounded(1,10);
+        arrToSort[i] = rg->bounded(1,10);
         arrButtons[i]->move(290 + 50 * i, 50);
-        arrButtons[i]->setText(QString::number(arr[i]));
+        arrButtons[i]->setText(QString::number(arrToSort[i]));
     }
 }
-
-

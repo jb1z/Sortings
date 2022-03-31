@@ -4,7 +4,7 @@ Selectsorter::Selectsorter()
 {
 
 }
-void Selectsorter::sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N)
+void Selectsorter::sort(int* arrToSort, QVector <QPushButton*>& arrButtons, int N)
 {
     for(int i = 0; i < N - 1;i++)
     {

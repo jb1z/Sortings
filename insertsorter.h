@@ -6,7 +6,7 @@ class Insertsorter: public Sorter
 {
 public:
     Insertsorter();
-    void sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N);
+    void sort(int* arrToSort, QVector <QPushButton*>& arrButtons, int N);
 };
 
 #endif // INSERTSORTER_H

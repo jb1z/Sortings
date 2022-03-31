@@ -21,7 +21,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     QVector <QPushButton*> arrButtons;    
-    int* arr = new int[10];
+    int* arrToSort = new int[10];
     int N = 10;
     ~MainWindow();
 private slots:

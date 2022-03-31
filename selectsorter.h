@@ -6,7 +6,7 @@ class Selectsorter: public Sorter
 {
 public:
     Selectsorter();
-    void sort(int* arrToSort, QVector <QPushButton*> arrButtons, int N);
+    void sort(int* arrToSort, QVector <QPushButton*>& arrButtons, int N);
 };
 
 #endif // SELECTSORTER_H

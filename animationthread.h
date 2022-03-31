@@ -12,11 +12,11 @@ class animationThread:public QThread
      Q_OBJECT
 public:
     animationThread();
-    void runSorting(int* arrToSort, QVector <QPushButton*> arrButtons, int N, int sortingTypeToSet);
-    int* arr = new int[10];
+    void runSorting(int* arrToSort, QVector <QPushButton*>* arrButtons, int N, int sortingTypeToSet);
+    int* arrToSortThread = new int[10];
     int N = 10;
     int sortingTypeThread;
-    QVector <QPushButton*> arrButtons;
+    QVector <QPushButton*>* arrButtonsThread;
     BubbleSorter* bubble;
     Insertsorter* insert;
     Selectsorter* select;
