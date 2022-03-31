@@ -22,6 +22,10 @@ void animationThread::run()
     {
         bubble->sort(arrToSortThread, *arrButtonsThread, N);
     }
+    else if(this->sortingTypeThread == 2)
+    {
+        insert->sort(arrToSortThread, *arrButtonsThread, N);
+    }
     else if(this->sortingTypeThread == 3)
     {
         select->sort(arrToSortThread, *arrButtonsThread, N);

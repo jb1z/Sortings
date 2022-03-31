@@ -14,7 +14,7 @@ void BubbleSorter::sort(int* arrToSort, QVector <QPushButton*>& arrButtons, int 
             //For visualising comparisons
             arrButtons[j]->setDisabled(true);
             arrButtons[j + 1]->setDisabled(true);
-            Sleep(1000);
+            Sleep(100);
             arrButtons[j]->setDisabled(false);
             arrButtons[j + 1]->setDisabled(false);
             if(arrToSort[j] > arrToSort[j + 1])
