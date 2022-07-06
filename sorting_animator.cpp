@@ -1,4 +1,4 @@
-#include "animationthread.h"
+#include "sorting_animator.h"
 
 animationThread::animationThread()
 {

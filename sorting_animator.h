@@ -1,8 +1,8 @@
 #ifndef ANIMATIONTHREAD_H
 #define ANIMATIONTHREAD_H
 #include "sorter_1_bubble.h"
-#include "insertsorter.h"
-#include "selectsorter.h"
+#include "sorter_2_insert.h"
+#include "sorter_3_select.h"
 #include <QThread>
 #include <windows.h>
 #include <QDebug>

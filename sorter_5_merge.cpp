@@ -1,4 +1,4 @@
-#include "mergesorter.h"
+#include "sorter_5_merge.h"
 
 mergesorter::mergesorter()
 {
