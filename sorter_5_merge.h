@@ -1,6 +1,6 @@
 #ifndef MERGESORTER_H
 #define MERGESORTER_H
-#include "sorter.h"
+#include "sorter_0_base.h"
 
 class mergesorter: public Sorter
 {

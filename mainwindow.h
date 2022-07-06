@@ -6,10 +6,10 @@
 #include <QString>
 #include <QTimer>
 #include <qrandom.h>
-#include "animationthread.h"
-#include "bubblesorter.h"
-#include "insertsorter.h"
-#include "selectsorter.h"
+#include "sorting_animator.h"
+#include "sorter_1_bubble.h"
+#include "sorter_2_insert.h"
+#include "sorter_3_select.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

@@ -9,29 +9,29 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    animationthread.cpp \
-    bubblesorter.cpp \
-    countsorter.cpp \
-    heapsorter.cpp \
-    insertsorter.cpp \
     main.cpp \
     mainwindow.cpp \
-    mergesorter.cpp \
-    quicksorter.cpp \
-    selectsorter.cpp \
-    sorter.cpp
+    sorter_0_base.cpp \
+    sorter_1_bubble.cpp \
+    sorter_2_insert.cpp \
+    sorter_3_select.cpp \
+    sorter_4_quick.cpp \
+    sorter_5_merge.cpp \
+    sorter_6_heap.cpp \
+    sorter_7_count.cpp \
+    sorting_animator.cpp
 
 HEADERS += \
-    animationthread.h \
-    bubblesorter.h \
-    countsorter.h \
-    heapsorter.h \
-    insertsorter.h \
     mainwindow.h \
-    mergesorter.h \
-    quicksorter.h \
-    selectsorter.h \
-    sorter.h
+    sorter_0_base.h \
+    sorter_1_bubble.h \
+    sorter_2_insert.h \
+    sorter_3_select.h \
+    sorter_4_quick.h \
+    sorter_5_merge.h \
+    sorter_6_heap.h \
+    sorter_7_count.h \
+    sorting_animator.h
 
 FORMS += \
     mainwindow.ui

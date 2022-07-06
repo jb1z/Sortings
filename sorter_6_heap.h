@@ -1,6 +1,6 @@
 #ifndef HEAPSORTER_H
 #define HEAPSORTER_H
-#include "sorter.h"
+#include "sorter_0_base.h"
 
 class heapsorter: public Sorter
 {

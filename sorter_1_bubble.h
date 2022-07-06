@@ -1,6 +1,6 @@
 #ifndef BUBBLESORTER_H
 #define BUBBLESORTER_H
-#include "sorter.h"
+#include "sorter_0_base.h"
 #include <QPushButton>
 #include <QPoint>
 

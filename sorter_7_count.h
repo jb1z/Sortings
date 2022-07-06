@@ -1,6 +1,6 @@
 #ifndef COUNTSORTER_H
 #define COUNTSORTER_H
-#include "sorter.h"
+#include "sorter_0_base.h"
 
 class countsorter: public Sorter
 {

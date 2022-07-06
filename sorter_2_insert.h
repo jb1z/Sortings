@@ -1,6 +1,6 @@
 #ifndef INSERTSORTER_H
 #define INSERTSORTER_H
-#include "sorter.h"
+#include "sorter_0_base.h"
 
 class Insertsorter: public Sorter
 {

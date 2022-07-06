@@ -1,4 +1,4 @@
-#include "selectsorter.h"
+#include "sorter_3_select.h"
 
 Selectsorter::Selectsorter()
 {

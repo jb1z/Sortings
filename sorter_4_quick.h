@@ -1,6 +1,6 @@
 #ifndef QUICKSORTER_H
 #define QUICKSORTER_H
-#include "sorter.h"
+#include "sorter_0_base.h"
 
 class quicksorter: public Sorter
 {

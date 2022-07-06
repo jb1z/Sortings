@@ -1,4 +1,4 @@
-#include "countsorter.h"
+#include "sorter_7_count.h"
 
 countsorter::countsorter()
 {

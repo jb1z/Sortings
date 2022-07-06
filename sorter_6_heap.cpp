@@ -1,4 +1,4 @@
-#include "heapsorter.h"
+#include "sorter_6_heap.h"
 
 heapsorter::heapsorter()
 {

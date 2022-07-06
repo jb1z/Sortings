@@ -1,4 +1,4 @@
-#include "quicksorter.h"
+#include "sorter_4_quick.h"
 
 quicksorter::quicksorter()
 {

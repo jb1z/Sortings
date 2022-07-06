@@ -1,4 +1,4 @@
-#include "insertsorter.h"
+#include "sorter_2_insert.h"
 
 Insertsorter::Insertsorter()
 {
