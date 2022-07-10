@@ -1,11 +1,5 @@
 #include "sorter_7_count.h"
 
-countsorter::countsorter()
-{
-
-}
-
-void countsorter::sort(int arrToSort[], int m, int n)
-{
+void countsorter::sort(QVector<int> arrToSort, QVector <QPushButton*>& arrButtons){
 
 }

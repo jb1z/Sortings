@@ -1,22 +1,14 @@
 #include "sorter_3_select.h"
 
-Selectsorter::Selectsorter()
-{
-
-}
-void Selectsorter::sort(int* arrToSort, QVector <QPushButton*>& arrButtons, int N)
-{
-    for(int i = 0; i < N - 1;i++)
-    {
+void Selectsorter::sort(QVector<int> arrToSort, QVector <QPushButton*>& arrButtons){
+    for(int i = 0; i < arrToSort.size() - 1;i++){
         int min_index = i;
         arrButtons[i]->setDisabled(true);
-        for(int j = i + 1;j < N;j++)
-        {
+        for(int j = i + 1;j < arrToSort.size();j++){
             arrButtons[j]->setDisabled(true);
             Sleep(500);
             arrButtons[j]->setDisabled(false);
-            if(arrToSort[j] < arrToSort[min_index])
-            {
+            if(arrToSort[j] < arrToSort[min_index]){
                 if(min_index != i)arrButtons[min_index]->setDisabled(false);
                 min_index = j;
                 arrButtons[min_index]->setDisabled(true);

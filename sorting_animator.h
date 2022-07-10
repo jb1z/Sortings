@@ -8,21 +8,19 @@
 #include <windows.h>
 #include <QDebug>
 
-class animationThread:public QThread
-{
-     Q_OBJECT
-public:
-    animationThread();
-    void runSorting(int* arrToSort, QVector <QPushButton*>* arrButtons, int N, Sorter::SortingType sortingTypeToSet);
-    int* arrToSortThread = new int[10];
-    int N = 10;
-    Sorter::SortingType sortingTypeThread;
-    QVector <QPushButton*>* arrButtonsThread;
-    BubbleSorter* bubble;
-    Insertsorter* insert;
-    Selectsorter* select;
-protected:
-     void run();
+class animationThread:public QThread{
+        Q_OBJECT
+    public:
+        animationThread();
+        void runSorting(QVector<int> arrToSort, QVector <QPushButton*>* arrButtons, Sorter::SortingType sortingTypeToSet);
+        QVector<int> arrToSortThread;
+        Sorter::SortingType sortingTypeThread;
+        QVector <QPushButton*>* arrButtonsThread;
+        BubbleSorter* bubble;
+        Insertsorter* insert;
+        Selectsorter* select;
+    protected:
+        void run();
 };
 
 #endif // ANIMATIONTHREAD_H

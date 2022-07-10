@@ -15,22 +15,20 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
-public:
-    MainWindow(QWidget *parent = nullptr);
-    QVector <QPushButton*> arrButtons;    
-    int* arrToSort = new int[10];
-    int N = 10;
-    ~MainWindow();
-private slots:
-    void on_bubbleSorterButton_clicked();
-    void on_insertSorterButton_clicked();
-    void on_selectSorterButton_clicked();
-    void on_simulateButton_clicked();
-    void on_remakeButton_clicked();
-private:
-    Ui::MainWindow *ui;
+class MainWindow : public QMainWindow{
+        Q_OBJECT
+    public:
+        MainWindow(QWidget *parent = nullptr);
+        QVector <QPushButton*> arrButtons;
+        QVector<int> arrToSort;
+        ~MainWindow();
+    private slots:
+        void on_bubbleSorterButton_clicked();
+        void on_insertSorterButton_clicked();
+        void on_selectSorterButton_clicked();
+        void on_simulateButton_clicked();
+        void on_remakeButton_clicked();
+    private:
+        Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H

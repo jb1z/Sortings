@@ -2,11 +2,9 @@
 #define QUICKSORTER_H
 #include "sorter_0_base.h"
 
-class quicksorter: public Sorter
-{
-public:
-    quicksorter();
-    void sort(int arrToSort[], int N);
+class quicksorter: public Sorter{
+    public:
+        void sort(QVector<int> arrToSort, QVector <QPushButton*>& arrButtons) override;
 };
 
 #endif // QUICKSORTER_H

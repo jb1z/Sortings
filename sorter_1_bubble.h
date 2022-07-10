@@ -4,11 +4,9 @@
 #include <QPushButton>
 #include <QPoint>
 
-class BubbleSorter: public Sorter
-{
+class BubbleSorter: public Sorter{
     public:
-        BubbleSorter();
-        void sort(int* arrToSort, QVector <QPushButton*>& arrButtons, int N);
+        void sort (QVector<int> arrToSort, QVector <QPushButton*>& arrButtons) override;
 };
 
 #endif // BUBBLESORTER_H
