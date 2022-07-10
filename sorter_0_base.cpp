@@ -1,18 +1,18 @@
 #include "sorter_0_base.h"
 
-int Sorter::sortingType;
+Sorter::SortingType Sorter::sortingType;
 
 Sorter::Sorter()
 {
 
 }
 
-int Sorter::getSortingType()
+Sorter::SortingType Sorter::getSortingType()
 {
     return sortingType;
 }
 
-void Sorter::setSortingType(int sortingTypeToSet)
+void Sorter::setSortingType(SortingType sortingTypeToSet)
 {
     sortingType = sortingTypeToSet;
 }

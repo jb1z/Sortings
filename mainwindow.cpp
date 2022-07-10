@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "sorter_0_base.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -25,29 +26,25 @@ MainWindow::MainWindow(QWidget *parent)
     }
 }
 
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
 
 
 void MainWindow::on_bubbleSorterButton_clicked()
 {
    ui->labelSortingType->setText("You chose: bubble sorting.");
-   Sorter::setSortingType(1);
+   Sorter::setSortingType(Sorter::SortingType::BUBBLE);
 }
 
 void MainWindow::on_insertSorterButton_clicked()
 {
     ui->labelSortingType->setText("You chose: insert sorting.");
-    Sorter::setSortingType(2);
+    Sorter::setSortingType(Sorter::SortingType::INSERT);
 }
 
 
 void MainWindow::on_selectSorterButton_clicked()
 {
     ui->labelSortingType->setText("You chose: select sorting.");
-    Sorter::setSortingType(3);
+    Sorter::setSortingType(Sorter::SortingType::SELECT);
 }
 
 
@@ -55,12 +52,12 @@ void MainWindow::on_simulateButton_clicked()
 {
     animationThread* thread = new animationThread();
     thread->runSorting(arrToSort, &arrButtons, N, Sorter::getSortingType());
-    thread->quit();    
+    thread->quit();
 }
 
 
 void MainWindow::on_remakeButton_clicked()
-{    
+{
     QRandomGenerator *rg = QRandomGenerator::global();
     for(int i = 0; i < 10; i++)
     {
@@ -68,4 +65,9 @@ void MainWindow::on_remakeButton_clicked()
         arrButtons[i]->move(290 + 50 * i, 50);
         arrButtons[i]->setText(QString::number(arrToSort[i]));
     }
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
 }

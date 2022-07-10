@@ -7,7 +7,7 @@ animationThread::animationThread()
     select = new Selectsorter();
 }
 
-void animationThread::runSorting(int *arrToSort, QVector<QPushButton *>* arrButtons, int N, int sortingTypeToSet)
+void animationThread::runSorting(int *arrToSort, QVector<QPushButton *>* arrButtons, int N, Sorter::SortingType sortingTypeToSet)
 {
     this->N = N;
     this->sortingTypeThread = sortingTypeToSet;
@@ -18,15 +18,15 @@ void animationThread::runSorting(int *arrToSort, QVector<QPushButton *>* arrButt
 
 void animationThread::run()
 {
-    if(this->sortingTypeThread == 1)
+    if(this->sortingTypeThread == Sorter::SortingType::BUBBLE)
     {
         bubble->sort(arrToSortThread, *arrButtonsThread, N);
     }
-    else if(this->sortingTypeThread == 2)
+    else if(this->sortingTypeThread == Sorter::SortingType::INSERT)
     {
         insert->sort(arrToSortThread, *arrButtonsThread, N);
     }
-    else if(this->sortingTypeThread == 3)
+    else if(this->sortingTypeThread == Sorter::SortingType::SELECT)
     {
         select->sort(arrToSortThread, *arrButtonsThread, N);
     }

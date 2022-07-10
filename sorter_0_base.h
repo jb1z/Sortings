@@ -12,10 +12,19 @@ public:
     void swapButtons(QVector <QPushButton*>& arrButtons, int firstButtonIndex, int secondButtonIndex);
     void print(int *arrToSort, int N);
     bool isSorted(int *arrToSort, int N);
-    static int getSortingType();
-    static void setSortingType(int sortingTypeToSet);
+    enum SortingType{
+        BUBBLE = 1,
+        INSERT,
+        SELECT,
+        QUICK,
+        MERGE,
+        HEAP,
+        COUNT
+    };
+    static SortingType getSortingType();
+    static void setSortingType(SortingType sortingTypeToSet);
 private:
-    static int sortingType;
+    static SortingType sortingType;
 };
 
 #endif // SORTER_H
