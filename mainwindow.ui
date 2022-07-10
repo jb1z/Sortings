@@ -130,19 +130,6 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="heapSorterButton">
-       <property name="maximumSize">
-        <size>
-         <width>200</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>Heap sorting</string>
-       </property>
-      </widget>
-     </item>
-     <item>
       <widget class="QPushButton" name="quickSorterButton">
        <property name="maximumSize">
         <size>
@@ -152,6 +139,19 @@
        </property>
        <property name="text">
         <string>Quick sorting</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="heapSorterButton">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Heap sorting</string>
        </property>
       </widget>
      </item>

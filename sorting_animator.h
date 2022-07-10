@@ -4,6 +4,7 @@
 #include "sorter_1_bubble.h"
 #include "sorter_2_insert.h"
 #include "sorter_3_select.h"
+#include "sorter_4_quick.h"
 #include <QThread>
 #include <windows.h>
 #include <QDebug>
@@ -19,6 +20,7 @@ class animationThread:public QThread{
         BubbleSorter* bubble;
         Insertsorter* insert;
         Selectsorter* select;
+        QuickSorter* quick;
     protected:
         void run();
 };
