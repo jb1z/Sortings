@@ -16,7 +16,7 @@ public:
     void runSorting(int* arrToSort, QVector <QPushButton*>* arrButtons, int N, Sorter::SortingType sortingTypeToSet);
     int* arrToSortThread = new int[10];
     int N = 10;
-    int sortingTypeThread;
+    Sorter::SortingType sortingTypeThread;
     QVector <QPushButton*>* arrButtonsThread;
     BubbleSorter* bubble;
     Insertsorter* insert;
